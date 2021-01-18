@@ -1,0 +1,48 @@
+body {
+  width: 375px;
+  height: 667px;
+  margin: auto;
+  background-color: hsl(185, 75%, 39%);
+  font-size: 18px;
+  font-family: "Kumbh Sans";
+}
+#profileCard {
+  width: 325px;
+  height: 374px;
+  margin: 50% auto;
+}
+#profileOwner {
+  width: 325px;
+  height: 285px;
+  border-radius: 20px 20px 0 0;
+  margin: auto;
+  background-color: white;
+  background-image: url("../images/bg-pattern-card.svg");
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+#profileStats {
+  border-top: 1px solid hsl(0, 0%, 59%);
+  width: 325px;
+  height: 88px;
+  border-radius: 0 0 20px 20px;
+  margin: auto;
+  background-color: white;
+}
+#profilePicture {
+  width: 96px;
+  height: 96px;
+  display: inline-block;
+  margin: 87px 0 0 109px;
+  border: 5px solid white;
+  background-color: white;
+  border-radius: 53px;
+}
+#user,
+#city {
+  text-align: center;
+}
+#userName {
+}
+#userAge {
+}
