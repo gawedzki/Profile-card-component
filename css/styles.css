@@ -1,12 +1,12 @@
 body {
-  max-width: 375px;
-  max-height: 667px;
+  width: 375px;
   margin: auto;
   font-family: "Kumbh Sans", sans-serif;
 }
 #backgroundImg {
-  width: 375px;
-  height: 667px;
+  width: 100%;
+  min-width: 325px;
+  height: 100%;
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
@@ -42,14 +42,18 @@ body {
   margin: auto;
   background-color: white;
 }
+#imgDiv {
+  padding-top: 87px;
+}
 #profilePicture {
   width: 96px;
   height: 96px;
+  display: block;
   border: 5px solid white;
   border-radius: 53px;
-  margin: 87px 0 0 109px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: white;
-  display: inline-block;
 }
 #userName {
   padding-right: 10px;
@@ -92,7 +96,21 @@ td {
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 2px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+@media only screen and (min-width: 376px) {
+  body {
+    width: 100%;
+    max-width: 1440px;
+  }
+  #profileOwner {
+    width: 350px;
+    background-size: 351px;
+  }
+  #profileStats {
+    width: 350px;
+  }
 }
