@@ -1,15 +1,28 @@
 body {
+  max-width: 375px;
+  max-height: 667px;
+  margin: auto;
+  font-family: "Kumbh Sans", sans-serif;
+}
+#backgroundImg {
   width: 375px;
   height: 667px;
-  margin: auto;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: flex;
+
+  background-color: red;
   background-color: hsl(185, 75%, 39%);
-  font-size: 18px;
-  font-family: "Kumbh Sans";
+  background-image: url("../images/bg-pattern-top.svg"),
+    url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 125% 200%, -25% -90%;
 }
 #profileCard {
-  width: 325px;
-  height: 374px;
-  margin: 50% auto;
+  align-self: center;
+  margin: auto;
 }
 #profileOwner {
   width: 325px;
@@ -22,9 +35,9 @@ body {
   background-repeat: no-repeat;
 }
 #profileStats {
-  border-top: 1px solid hsl(0, 0%, 59%);
   width: 325px;
   height: 88px;
+  border-top: 1px solid hsl(0, 0%, 59%);
   border-radius: 0 0 20px 20px;
   margin: auto;
   background-color: white;
@@ -32,17 +45,54 @@ body {
 #profilePicture {
   width: 96px;
   height: 96px;
-  display: inline-block;
-  margin: 87px 0 0 109px;
   border: 5px solid white;
-  background-color: white;
   border-radius: 53px;
+  margin: 87px 0 0 109px;
+  background-color: white;
+  display: inline-block;
+}
+#userName {
+  padding-right: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+#userAge {
+  font-weight: 700;
+  color: hsl(0, 0%, 59%);
 }
 #user,
 #city {
   text-align: center;
 }
-#userName {
+#user {
+  padding-top: 24px;
 }
-#userAge {
+#city {
+  padding-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: hsl(0, 0%, 59%);
+}
+#statTable {
+  width: 100%;
+  margin-top: 27px;
+}
+th,
+td {
+  width: 33.3%;
+  text-align: center;
+}
+td {
+  padding-top: 4px;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: hsl(0, 0%, 59%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
