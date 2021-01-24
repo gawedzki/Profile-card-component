@@ -13,12 +13,12 @@ body {
   transform: translateY(-50%);
   display: flex;
 
-  background-color: red;
   background-color: hsl(185, 75%, 39%);
   background-image: url("../images/bg-pattern-top.svg"),
     url("../images/bg-pattern-bottom.svg");
   background-repeat: no-repeat, no-repeat;
-  background-position: 125% 200%, -25% -90%;
+  background-position: calc(50% - 445px) calc(50% - 475px),
+    calc(50% - -400px) calc(50% - -475px);
 }
 #profileCard {
   align-self: center;
@@ -104,7 +104,10 @@ td {
 @media only screen and (min-width: 376px) {
   body {
     width: 100%;
-    max-width: 1440px;
+  }
+  #backgroundImg {
+    background-position: calc(50% - 520px) calc(50% - 375px),
+      calc(50% - -460px) calc(50% - -500px);
   }
   #profileOwner {
     width: 350px;
