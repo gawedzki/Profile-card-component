@@ -78,8 +78,8 @@ body {
   color: hsl(0, 0%, 59%);
 }
 #statTable {
-  width: 100%;
-  margin-top: 27px;
+  width: 90%;
+  margin: 27px 5% 0 5%;
 }
 th,
 td {
